@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>W-L-X-Blog</title>
+  
+  <subtitle>加油！！！W-L-X-A</subtitle>
+  <link href="https://wlxacount.github.io/atom.xml" rel="self"/>
+  
+  <link href="https://wlxacount.github.io/"/>
+  <updated>2021-08-14T15:14:04.330Z</updated>
+  <id>https://wlxacount.github.io/</id>
+  
+  <author>
+    <name>Longxiang Wang</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>博客搭建.md</title>
+    <link href="https://wlxacount.github.io/2021/08/10/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA-md/"/>
+    <id>https://wlxacount.github.io/2021/08/10/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA-md/</id>
+    <published>2021-08-10T09:30:13.000Z</published>
+    <updated>2021-08-14T15:14:04.330Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;hexo-github（托管平台可以自己选流程大致一样）搭建博客&quot;&gt;&lt;a href=&quot;#hexo-github（托管平台可以自己选流程大致一样）搭建博客&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>markdown基础语法</title>
+    <link href="https://wlxacount.github.io/2021/08/03/001_markdown%E6%95%99%E7%A8%8B/"/>
+    <id>https://wlxacount.github.io/2021/08/03/001_markdown%E6%95%99%E7%A8%8B/</id>
+    <published>2021-08-03T03:23:37.000Z</published>
+    <updated>2021-08-14T15:14:04.320Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;请使用 &lt;strong&gt;Chrome&lt;/strong&gt; 浏览器。&lt;/p&gt;
+&lt;p&gt;请阅读下方文本熟悉工具使用方法，本文可直接拷贝到微信中预览。&lt;/p&gt;
+&lt;h2 id=&quot;1-Markdown简介&quot;&gt;&lt;a href=&quot;#1-Markdown简介&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="markdown" scheme="https://wlxacount.github.io/categories/markdown/"/>
+    
+    
+    <category term="md语法" scheme="https://wlxacount.github.io/tags/md%E8%AF%AD%E6%B3%95/"/>
+    
+  </entry>
+  
+</feed>
