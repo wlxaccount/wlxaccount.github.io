@@ -1,1 +1,6 @@
-/* Here is your custom css styles. */
+/* Here is your custom css styles. */.card {
+	 background: url(https://codecheng-1305009997.cos.ap-chengdu.myqcloud.com/img/20210504193531.jfif) top;
+    border-radius: 25px;
+    box-shadow: 0 15px 35px rgba(42, 89, 165, .1), 0 5px 15px rgba(71, 159, 188, .07) !important;
+}
+<script type="text/javascript">window.onload = function(){//屏蔽键盘事件document.onkeydown = function (){var e = window.event || arguments[0];//F12if(e.keyCode == 123){return false;//Ctrl+Shift+I}else if((e.ctrlKey) && (e.shiftKey) && (e.keyCode == 73)){return false;//Shift+F10}else if((e.shiftKey) && (e.keyCode == 121)){return false;//Ctrl+U}else if((e.ctrlKey) && (e.keyCode == 85)){return false;}};//屏蔽鼠标右键document.oncontextmenu = function (){return false;}}</script>

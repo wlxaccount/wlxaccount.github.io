@@ -1,12 +1,151 @@
-<!DOCTYPE html>
-<html lang="en">
+<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css">
+<script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<title>CodeWang简介</title>
+	<meta name="keywords" content="关于">
+	<meta name="description" content="关于CodeWang">
+	<meta name="author" content="CodeWang">
+	<link rel="shortcut icon" href="https://codecheng-1305009997.cos.ap-chengdu.myqcloud.com/img/20210501222811.webp"
+		type="image/x-icon">
+	<link rel="stylesheet" href="about.css">
+	<link href="https://cdn.bootcss.com/font-awesome/5.10.0-12/css/all.css" rel="stylesheet">
 </head>
-<body>
-    这是自定也页面
+<!--动态背景-->
+<div class="bg"></div>
+<div class="bg bg2"></div>
+<div class="bg bg3"></div>
+
+
+
+<body ondragstart="window.event.returnValue=false" oncontextmenu="window.event.returnValue=false"
+	onselectstart="event.returnValue=false">
+	<script>
+		document.onkeydown = function () {
+			if (window.event && window.event.keyCode == 123) {
+				event.keyCode = 0;
+				event.returnValue = false;
+				return false;
+			}
+		};
+	</script>
+<audio autoplay loop>
+		<source
+			src="https://codecheng-1305009997.cos.ap-chengdu.myqcloud.com/audio/%E5%85%83%E5%AD%90%E5%BC%B9%E5%90%89%E4%BB%96%20-%20%E5%B0%91%E5%B9%B4%E7%9A%84%E6%A2%A6%EF%BC%88%E7%BF%BB%E8%87%AA%20%E5%B2%B8%E9%83%A8%E7%9C%9E%E6%98%8E%EF%BC%89.mp3"
+			type="audio/mpeg">
+		您的浏览器不支持audio标签，无法播放音乐！
+	</audio>
+	<div class="mdui-container">
+		<div class="showarea-1">
+			<a href="https://www.itrhx.com/" target="_blank">
+				<img id="mainicon"
+					src="https://codecheng-1305009997.cos.ap-chengdu.myqcloud.com/img/20210501222811.webp">
+			</a>
+			<table>
+				<tr>
+					<td><i class="fa fa-user-tie fa-fw"></i> 爱称：王龙祥（CodeWang）</td>
+					<td><i class="fa fa-map-marker-alt fa-fw"></i> 栖息之地：银河|星辰</td>
+				</tr>
+				<tr>
+					<td><i class="fa fa-birthday-cake fa-fw"></i> 星星发光日：2021</td>
+					<td><i class="fas fa-code"></i> 学习领域：java丨动科丨前端</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<div class="mdui-container">
+		<div class="showarea-2">
+			<h3>一点点技能丨Skill</h3>
+			<div>
+				<section class="skill">
+					<div class="item">
+						<div class="describe">
+							HTML/CSS/JS
+						</div>
+						<div class="progress">
+							<span class="green" style="width: 69%;"><span>69%</span></span>
+						</div>
+					</div>
+					<div class="item">
+						<div class="describe">
+							UI
+						</div>
+						<div class="progress">
+							<span class="orange" style="width: 20%;"><span>20%</span></span>
+						</div>
+					</div>
+					<div class="item">
+						<div class="describe">
+							JAVA
+						</div>
+						<div class="progress">
+							<span class="red" style="width: 65%;"><span>65%</span></span>
+						</div>
+					</div>
+					<div class="item">
+						<div class="describe">
+							指弹
+						</div>
+						<div class="progress">
+							<span class="blue" style="width: 60%;"><span>60%</span></span>
+						</div>
+					</div>
+					<div class="item">
+						<div class="describe">
+							阅读
+						</div>
+						<div class="progress">
+							<span class="darkblue" style="width: 70%;"><span>70%</span></span>
+						</div>
+					</div>
+					<div class="item">
+						<div class="describe">
+							hexo
+						</div>
+						<div class="progress">
+							<span class="orange" style="width: 35%;"><span>35%</span></span>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+		<div class="showarea-3">
+			<h3>简介丨Introduction</h3>
+			<p>● 学校：现在河工大；<a href="https://www.haut.edu.cn/" target="_blank"><img src="https://pic54.photophoto.cn/20200216/0007019852383318_b.jpg"
+				height="100px" width="100px"></a></p>
+			<p>● 梦想：有一天可以进入华为；</p>
+			<p>● 现况：自学 java,前端；</p>
+			<p>● 目标：做一个会前端，会java的养猪人；</p>
+			<p>● 博客：存放温柔和勇气；</p>
+			<p>● 兴趣：指弹</p>
+			<p>● 其他：虽然很菜，但是在努力学习中！</p>
+		</div>
+	</div>
+	<div class="mdui-container">
+		<div class="showarea-4">
+			<h3>Fighting丨一起学习~</h3>
+			<a href="wlxaccount.github.io" target="_blank"><img
+					src="https://codecheng-1305009997.cos.ap-chengdu.myqcloud.com/img/20210501222811.webp" class="icon"
+					title="个人博客"></a>
+			
+			
+		</div>
+	</div>
+	<footer id="footer">
+		Copyright © 2021 <a href="wlxaccount.github.io" target="_blank">codecheng</a>.
+	</footer>
+	<script>
+		if ('addEventListener' in window) {
+			window.addEventListener('load', function () { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
+			document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
+		}
+	</script>
+
+
 </body>
+
 </html>
