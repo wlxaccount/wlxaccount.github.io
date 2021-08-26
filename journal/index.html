@@ -199,7 +199,6 @@
 color="122 103 238" opacity='0.7' zIndex="-2" count="200" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js">
 </script>
 
-    
    <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas> 
    <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script> 
    <script type="text/javascript" src="/js/src/fireworks.js"></script>
@@ -271,7 +270,7 @@ color="122 103 238" opacity='0.7' zIndex="-2" count="200" src="//cdn.bootcss.com
   
   <li class="hide-on-med-and-down nav-item">
     
-    <a href="/" class="waves-effect waves-light">
+    <a href="/about" class="waves-effect waves-light">
 
       
       <i class="fas fa-address-card" style="zoom: 0.6;"></i>
@@ -318,7 +317,7 @@ color="122 103 238" opacity='0.7' zIndex="-2" count="200" src="//cdn.bootcss.com
     
     <a href="/friends" class="waves-effect waves-light">
       
-      <i class="fas fa-address-" style="zoom: 0.6;"></i>
+      <i class="fas fa-address-card" style="zoom: 0.6;"></i>
       
       <span>友情链接</span>
     </a>
@@ -501,7 +500,7 @@ color="122 103 238" opacity='0.7' zIndex="-2" count="200" src="//cdn.bootcss.com
 	  
 		<a href="/friends" class="waves-effect waves-light">
 			
-			    <i class="fa-fw fas fa-address-"></i>
+			    <i class="fa-fw fas fa-address-card"></i>
 			
 			友情链接
 		</a>
@@ -775,20 +774,9 @@ color="122 103 238" opacity='0.7' zIndex="-2" count="200" src="//cdn.bootcss.com
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="list">
-                                        <div class="dian"></div>
-                                        <div class="list_box">
-                                            <div class="hx"></div>
-                                            <div class="list_nr">
-                                                <p class="date">2021年8月25日16:58:42</p>
-                                                <div class="nr_tit"> <a href=""># 添加日志</a> </div>
-                                                <div class="nr_nr"> 有了日志</div>
-                                            </div>
-                                        </div>
-                                    </div>
                                     <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
                                     <script src="../src/tiao_c.js"></script>
-                                    <script> $(document).ready(_ => { let list_box = $(".list_box"); let hx = $(".hx"); let list_nr = $(".list_nr"); let date = $(".date"); let arr_color = ['#118DF0', '#8bc24c', '#FF5F5F', '#515bd4', '#F7B32D']; let flag = 0; let wy = $("body").width(); function pc() { if (wy <= 700) { window.history.go(0); } if ($("body").width() < 1240) { $(".top img").css("right", "5px"); } else { $(".top img").css("right", "-22px"); } $(".top").css("display", "block"); for (let index = 0; index < list_box.length; index++) { $(list_nr[index]).css("background", arr_color[flag]); if (flag == 4) { flag = 0; } else { flag += 1; } if (index % 2 != 0) { let a = $(list_box[index]); let b = $(hx[index]); let c = $(list_nr[index]); let d = $(date[index]); a.css({ "float": "right" }); b.css({ "float": "left" }) c.css({ "float": "right", "margin-right": "19%" }) d.css({ "right": 'unset', "left": "12%" }) } } $(".list").slideDown(800); } function move() { if (wy > 700) { window.history.go(0); } for (let index = 0; index < list_box.length; index++) { $(list_nr[index]).css("background", arr_color[flag]); if (flag == 4) { flag = 0; } else { flag += 1; } } $(".list").css("margin-top", "60px"); $(".line").css("left", "10%"); $(".dian").css("left", "10%"); $(".list_box").css("width", "100%"); $(".hx").css("float", "left"); $(".list_nr").css({ "max-height": "146px", "line-height": "17px", "font-size": "12px" }); $($(".list")['0']).css("margin-top", "20px"); $(".list").slideDown(800); } function win() { let width = $("body").width(); $(".line").slideDown(800, _ => { if (width <= 700) { move(); } else { pc(); } }); } $(window).resize(win); win(); }); $(".nr_nr").click((e) => { if ($("body").width() <= 700) { alert(e.delegateTarget.innerText); } }) $(".top img").click(_ => { $(document).scrollTop(0); }) var time = new Date(); var time_new = time.getTime(); var str = '2019-03-01 12:14:46'; str = str.replace(/-/g, '/'); var date = new Date(str); var time_old = date.getTime(); var cha = (time_new - time_old)/86400000; console.log('本站已运行'+Math.floor(cha)+'天'); // 我也不写注释了，js部分的代码，主要就是拿来兼容移动端和PC端。 </script>
+                                    <script> $(document).ready(_ => { let list_box = $(".list_box"); let hx = $(".hx"); let list_nr = $(".list_nr"); let date = $(".date"); let arr_color = ['#118DF0', '#8bc24c', '#FF5F5F', '#515bd4', '#F7B32D']; let flag = 0; let wy = $("body").width(); function pc() { if (wy <= 700) { window.history.go(0); } if ($("body").width() < 1240) { $(".top img").css("right", "5px"); } else { $(".top img").css("right", "-22px"); } $(".top").css("display", "block"); for (let index = 0; index < list_box.length; index++) { $(list_nr[index]).css("background", arr_color[flag]); if (flag == 4) { flag = 0; } else { flag += 1; } if (index % 2 != 0) { let a = $(list_box[index]); let b = $(hx[index]); let c = $(list_nr[index]); let d = $(date[index]); a.css({ "float": "right" }); b.css({ "float": "left" }) c.css({ "float": "right", "margin-right": "19%" }) d.css({ "right": 'unset', "left": "12%" }) } } $(".list").slideDown(800); } function move() { if (wy > 700) { window.history.go(0); } for (let index = 0; index < list_box.length; index++) { $(list_nr[index]).css("background", arr_color[flag]); if (flag == 4) { flag = 0; } else { flag += 1; } } $(".list").css("margin-top", "60px"); $(".line").css("left", "10%"); $(".dian").css("left", "10%"); $(".list_box").css("width", "100%"); $(".hx").css("float", "left"); $(".list_nr").css({ "max-height": "146px", "line-height": "17px", "font-size": "12px" }); $($(".list")['0']).css("margin-top", "20px"); $(".list").slideDown(800); } function win() { let width = $("body").width(); $(".line").slideDown(800, _ => { if (width <= 700) { move(); } else { pc(); } }); } $(window).resize(win); win(); }); $(".nr_nr").click((e) => { if ($("body").width() <= 700) { alert(e.delegateTarget.innerText); } }) $(".top img").click(_ => { $(document).scrollTop(0); }) var time = new Date(); var time_new = time.getTime(); var str = '2019-03-01 12:14:46'; str = str.replace(/-/g, '/'); var date = new Date(str); var time_old = date.getTime(); var cha = (time_new - time_old) / 86400000; console.log('本站已运行' + Math.floor(cha) + '天'); // 我也不写注释了，js部分的代码，主要就是拿来兼容移动端和PC端。 </script>
                                 </div>
                             </div>
                         </div>

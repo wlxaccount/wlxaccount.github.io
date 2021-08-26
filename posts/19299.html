@@ -199,7 +199,6 @@
 color="122 103 238" opacity='0.7' zIndex="-2" count="200" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js">
 </script>
 
-    
    <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas> 
    <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script> 
    <script type="text/javascript" src="/js/src/fireworks.js"></script>
@@ -271,7 +270,7 @@ color="122 103 238" opacity='0.7' zIndex="-2" count="200" src="//cdn.bootcss.com
   
   <li class="hide-on-med-and-down nav-item">
     
-    <a href="/" class="waves-effect waves-light">
+    <a href="/about" class="waves-effect waves-light">
 
       
       <i class="fas fa-address-card" style="zoom: 0.6;"></i>
@@ -318,7 +317,7 @@ color="122 103 238" opacity='0.7' zIndex="-2" count="200" src="//cdn.bootcss.com
     
     <a href="/friends" class="waves-effect waves-light">
       
-      <i class="fas fa-address-" style="zoom: 0.6;"></i>
+      <i class="fas fa-address-card" style="zoom: 0.6;"></i>
       
       <span>友情链接</span>
     </a>
@@ -501,7 +500,7 @@ color="122 103 238" opacity='0.7' zIndex="-2" count="200" src="//cdn.bootcss.com
 	  
 		<a href="/friends" class="waves-effect waves-light">
 			
-			    <i class="fa-fw fas fa-address-"></i>
+			    <i class="fa-fw fas fa-address-card"></i>
 			
 			友情链接
 		</a>
@@ -789,7 +788,7 @@ color="122 103 238" opacity='0.7' zIndex="-2" count="200" src="//cdn.bootcss.com
 
 <p>之后你就可以到source/_post中找到新建的博客(.md文件)用编辑器编辑。使用markdown语法</p>
 <h2 id="3本地博客发布到Github-Pages"><a href="#3本地博客发布到Github-Pages" class="headerlink" title="3本地博客发布到Github Pages"></a>3本地博客发布到Github Pages</h2><p><strong>第一步</strong>，需要在Github上创建好Github Pages仓库。<a target="_blank" rel="noopener" href="https://lixint.github.io/githubpage.html">Github注册以及Github Pages创建</a><br><strong>第二步</strong>，安装发布插件。<br>在<strong>站点目录</strong>中运行命令行输入<code>npm install hexo-deployer-git --save</code><br>后续博客的修改等等各种功能 都需要安装各种<strong>插件</strong>。这个对博客的帮助是非常大的。<br>等待插件安装完成</p>
-<h3 id="3-1将本地目录与Github关联起来。"><a href="#3-1将本地目录与Github关联起来。" class="headerlink" title="3.1将本地目录与Github关联起来。"></a>3.1将本地目录与Github关联起来。</h3><p>命令行输入<code>ssh-keygen -t rsa -C &quot;邮箱地址&quot;</code>，这里要输入之前注册Github时的邮箱，例如我之前注册用的是 <a href="mailto:&#x65;&#120;&#x61;&#x6d;&#x70;&#108;&#x65;&#x40;&#x31;&#x36;&#51;&#46;&#x63;&#111;&#x6d;">&#x65;&#120;&#x61;&#x6d;&#x70;&#108;&#x65;&#x40;&#x31;&#x36;&#51;&#46;&#x63;&#111;&#x6d;</a>，那命令行就输入<code>ssh-keygen -t rsa -C &quot;example@163.com&quot;</code>输入后一直回车。按提示的路径找打 id_rsa.pub 文件并复制其内容到 Github 点击右上角的头像 Settings 选择SSH and GPG keys  点击New SSH key 将之前复制的内容粘帖到Key的框中。 上面的title 可以随意 点击add 完成添加。 </p>
+<h3 id="3-1将本地目录与Github关联起来。"><a href="#3-1将本地目录与Github关联起来。" class="headerlink" title="3.1将本地目录与Github关联起来。"></a>3.1将本地目录与Github关联起来。</h3><p>命令行输入<code>ssh-keygen -t rsa -C &quot;邮箱地址&quot;</code>，这里要输入之前注册Github时的邮箱，例如我之前注册用的是 <a href="mailto:&#101;&#x78;&#97;&#x6d;&#112;&#108;&#x65;&#64;&#49;&#x36;&#x33;&#x2e;&#x63;&#111;&#109;">&#101;&#x78;&#97;&#x6d;&#112;&#108;&#x65;&#64;&#49;&#x36;&#x33;&#x2e;&#x63;&#111;&#109;</a>，那命令行就输入<code>ssh-keygen -t rsa -C &quot;example@163.com&quot;</code>输入后一直回车。按提示的路径找打 id_rsa.pub 文件并复制其内容到 Github 点击右上角的头像 Settings 选择SSH and GPG keys  点击New SSH key 将之前复制的内容粘帖到Key的框中。 上面的title 可以随意 点击add 完成添加。 </p>
 <h4 id="3-1-1验证是否关联"><a href="#3-1-1验证是否关联" class="headerlink" title="3.1.1验证是否关联"></a>3.1.1验证是否关联</h4><p>cmd 输入</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"> ssh -T git@github.com </span><br><span class="line">出现 Hi &lt;account name&gt;! You&#x27;ve successfully authenticated, but GitHub doesnot provide shell access.成功</span><br></pre></td></tr></table></figure>
 
