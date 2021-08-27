@@ -825,10 +825,8 @@ color="122 103 238" opacity='0.7' zIndex="-2" count="200" src="//cdn.bootcss.com
 <p><strong>1.1.1</strong>安装 下载好之后就是傻瓜似的安装</p>
 <p><strong>1.1.2</strong> 验证安装，并测试Node.js是否加入环境变量，当出现如下图的情况，Node.js安装大功告成 </p>
 <p><a target="_blank" rel="noopener" href="https://imgtu.com/i/ftYauT"><img src="./images/loading.gif" data-original="https://z3.ax1x.com/2021/08/10/ftYauT.png" alt="ftYauT.png"></a></p>
-<p><img src="./images/loading.gif" data-original="/posts/.%5C%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA-md.assets%5Cimage-20210810115634526.png" alt="image-20210810115634526"></p>
 <h2 id="1-2-安装Git1"><a href="#1-2-安装Git1" class="headerlink" title="1.2 安装Git1"></a>1.2 安装Git1</h2><p>Git安装跟Node.js一样简单 傻瓜式安装 成功安装如下</p>
 <p><a target="_blank" rel="noopener" href="https://imgtu.com/i/ftYDUJ"><img src="./images/loading.gif" data-original="https://z3.ax1x.com/2021/08/10/ftYDUJ.png" alt="ftYDUJ.png"></a></p>
-<p><img src="./images/loading.gif" data-original="/posts/.%5C%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA-md.assets%5Cimage-20210810120155925.png" alt="image-20210810120155925"></p>
 <h2 id="2-hexo安装"><a href="#2-hexo安装" class="headerlink" title="2.hexo安装"></a>2.hexo安装</h2><p>安装hexo，打开终端cmd窗口输入（速相对于第二种速度慢，不建议使用）</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
 
@@ -860,21 +858,21 @@ color="122 103 238" opacity='0.7' zIndex="-2" count="200" src="//cdn.bootcss.com
 
 <p>之后你就可以到source/_post中找到新建的博客(.md文件)用编辑器编辑。使用markdown语法</p>
 <h2 id="3本地博客发布到Github-Pages"><a href="#3本地博客发布到Github-Pages" class="headerlink" title="3本地博客发布到Github Pages"></a>3本地博客发布到Github Pages</h2><p><strong>第一步</strong>，需要在Github上创建好Github Pages仓库。<a target="_blank" rel="noopener" href="https://lixint.github.io/githubpage.html">Github注册以及Github Pages创建</a><br><strong>第二步</strong>，安装发布插件。<br>在<strong>站点目录</strong>中运行命令行输入<code>npm install hexo-deployer-git --save</code><br>后续博客的修改等等各种功能 都需要安装各种<strong>插件</strong>。这个对博客的帮助是非常大的。<br>等待插件安装完成</p>
-<h3 id="3-1将本地目录与Github关联起来。"><a href="#3-1将本地目录与Github关联起来。" class="headerlink" title="3.1将本地目录与Github关联起来。"></a>3.1将本地目录与Github关联起来。</h3><p>命令行输入<code>ssh-keygen -t rsa -C &quot;邮箱地址&quot;</code>，这里要输入之前注册Github时的邮箱，例如我之前注册用的是 <a href="mailto:&#101;&#x78;&#97;&#x6d;&#112;&#108;&#x65;&#64;&#49;&#x36;&#x33;&#x2e;&#x63;&#111;&#109;">&#101;&#x78;&#97;&#x6d;&#112;&#108;&#x65;&#64;&#49;&#x36;&#x33;&#x2e;&#x63;&#111;&#109;</a>，那命令行就输入<code>ssh-keygen -t rsa -C &quot;example@163.com&quot;</code>输入后一直回车。按提示的路径找打 id_rsa.pub 文件并复制其内容到 Github 点击右上角的头像 Settings 选择SSH and GPG keys  点击New SSH key 将之前复制的内容粘帖到Key的框中。 上面的title 可以随意 点击add 完成添加。 </p>
+<h3 id="3-1将本地目录与Github关联起来。"><a href="#3-1将本地目录与Github关联起来。" class="headerlink" title="3.1将本地目录与Github关联起来。"></a>3.1将本地目录与Github关联起来。</h3><p>命令行输入<code>ssh-keygen -t rsa -C &quot;邮箱地址&quot;</code>，这里要输入之前注册Github时的邮箱，例如我之前注册用的是 <a href="mailto:&#x65;&#120;&#x61;&#x6d;&#x70;&#x6c;&#x65;&#x40;&#x31;&#54;&#x33;&#x2e;&#x63;&#x6f;&#109;">&#x65;&#120;&#x61;&#x6d;&#x70;&#x6c;&#x65;&#x40;&#x31;&#54;&#x33;&#x2e;&#x63;&#x6f;&#109;</a>，那命令行就输入<code>ssh-keygen -t rsa -C &quot;example@163.com&quot;</code>输入后一直回车。按提示的路径找打 id_rsa.pub 文件并复制其内容到 Github 点击右上角的头像 Settings 选择SSH and GPG keys  点击New SSH key 将之前复制的内容粘帖到Key的框中。 上面的title 可以随意 点击add 完成添加。 </p>
 <h4 id="3-1-1验证是否关联"><a href="#3-1-1验证是否关联" class="headerlink" title="3.1.1验证是否关联"></a>3.1.1验证是否关联</h4><p>cmd 输入</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"> ssh -T git@github.com </span><br><span class="line">出现 Hi &lt;account name&gt;! You&#x27;ve successfully authenticated, but GitHub doesnot provide shell access.成功</span><br></pre></td></tr></table></figure>
 
 <h2 id="4修改博客配置文件"><a href="#4修改博客配置文件" class="headerlink" title="4修改博客配置文件"></a>4修改博客配置文件</h2><h3 id="4-1修改Hexo站点的配置文件。"><a href="#4-1修改Hexo站点的配置文件。" class="headerlink" title="4.1修改Hexo站点的配置文件。"></a>4.1修改Hexo站点的配置文件。</h3><p>进入博客文件夹，找到<code>_config.yml</code>文件。 这个是<strong>博客配置文件</strong> </p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">title: 你的博客名 </span><br><span class="line">subtitle: 博客的副标题，有些主题支持</span><br><span class="line">description: 博客描述 </span><br><span class="line">keywords: 博客关键词 </span><br><span class="line">author: 作者，在文章中显示</span><br><span class="line">language: 博客语言语种    </span><br><span class="line">timezone: 时区 </span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
-<p><img src="./images/loading.gif" data-original="/posts/.%5C%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA-md.assets%5C1.png" alt="image-20210810135356292"></p>
+
 <p><a target="_blank" rel="noopener" href="https://imgtu.com/i/ftJ0fI"><img src="./images/loading.gif" data-original="https://z3.ax1x.com/2021/08/10/ftJ0fI.png" alt="ftJ0fI.png"></a></p>
 <ol>
 <li><p>修改配置。找到myBlog根目录下_config.yml文件，在最后配置</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: //复制过来的地址</span><br><span class="line">  branch: master</span><br><span class="line">   </span><br></pre></td></tr></table></figure></li>
 </ol>
 <h2 id="第五步-生成页面上传至Github"><a href="#第五步-生成页面上传至Github" class="headerlink" title="第五步 生成页面上传至Github"></a><strong>第五步</strong> 生成页面上传至Github</h2><p><code>hexo c</code></p>
-<p>命令行输入<code>hexo g</code>，此时Hexo会根据配置文件渲染出一套静态页面。<br>完成后输入<code>hexo d</code>，此时会将之前渲染出的一系列文件上传至Github </p>
+<p>命令行输入<code>hexo g</code>，此时Hexo会根据配置文件渲染出一套静态页面。<br>完成后输入<code>hexo d</code>，此时会将之前渲染出的一系列文件上传至Github</p>
 
                 
             </div>
@@ -1509,8 +1507,6 @@ color="122 103 238" opacity='0.7' zIndex="-2" count="200" src="//cdn.bootcss.com
 
 <!-- 代码语言 -->
 
-<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
-
 
 <!-- 代码块复制 -->
 
@@ -1518,6 +1514,8 @@ color="122 103 238" opacity='0.7' zIndex="-2" count="200" src="//cdn.bootcss.com
 
 
 <!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
 
 
     </div>
