@@ -740,6 +740,11 @@ color="122 103 238" opacity='0.7' zIndex="-2" count="200" src="//cdn.bootcss.com
                 
 
                 
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
+                    2021-08-30
+                </div>
+                
 
                 
                 <div class="info-break-policy">
@@ -808,7 +813,7 @@ color="122 103 238" opacity='0.7' zIndex="-2" count="200" src="//cdn.bootcss.com
 
 <p>之后你就可以到source/_post中找到新建的博客(.md文件)用编辑器编辑。使用markdown语法</p>
 <h2 id="3本地博客发布到Github-Pages"><a href="#3本地博客发布到Github-Pages" class="headerlink" title="3本地博客发布到Github Pages"></a>3本地博客发布到Github Pages</h2><p><strong>第一步</strong>，需要在Github上创建好Github Pages仓库。<a target="_blank" rel="noopener" href="https://lixint.github.io/githubpage.html">Github注册以及Github Pages创建</a><br><strong>第二步</strong>，安装发布插件。<br>在<strong>站点目录</strong>中运行命令行输入<code>npm install hexo-deployer-git --save</code><br>后续博客的修改等等各种功能 都需要安装各种<strong>插件</strong>。这个对博客的帮助是非常大的。<br>等待插件安装完成</p>
-<h3 id="3-1将本地目录与Github关联起来。"><a href="#3-1将本地目录与Github关联起来。" class="headerlink" title="3.1将本地目录与Github关联起来。"></a>3.1将本地目录与Github关联起来。</h3><p>命令行输入<code>ssh-keygen -t rsa -C &quot;邮箱地址&quot;</code>，这里要输入之前注册Github时的邮箱，例如我之前注册用的是 <a href="mailto:&#101;&#120;&#x61;&#x6d;&#112;&#x6c;&#x65;&#x40;&#49;&#x36;&#x33;&#x2e;&#x63;&#x6f;&#x6d;">&#101;&#120;&#x61;&#x6d;&#112;&#x6c;&#x65;&#x40;&#49;&#x36;&#x33;&#x2e;&#x63;&#x6f;&#x6d;</a>，那命令行就输入<code>ssh-keygen -t rsa -C &quot;example@163.com&quot;</code>输入后一直回车。按提示的路径找打 id_rsa.pub 文件并复制其内容到 Github 点击右上角的头像 Settings 选择SSH and GPG keys  点击New SSH key 将之前复制的内容粘帖到Key的框中。 上面的title 可以随意 点击add 完成添加。 </p>
+<h3 id="3-1将本地目录与Github关联起来。"><a href="#3-1将本地目录与Github关联起来。" class="headerlink" title="3.1将本地目录与Github关联起来。"></a>3.1将本地目录与Github关联起来。</h3><p>命令行输入<code>ssh-keygen -t rsa -C &quot;邮箱地址&quot;</code>，这里要输入之前注册Github时的邮箱，例如我之前注册用的是 <a href="mailto:&#x65;&#120;&#97;&#x6d;&#x70;&#x6c;&#x65;&#64;&#x31;&#x36;&#51;&#x2e;&#99;&#x6f;&#109;">&#x65;&#120;&#97;&#x6d;&#x70;&#x6c;&#x65;&#64;&#x31;&#x36;&#51;&#x2e;&#99;&#x6f;&#109;</a>，那命令行就输入<code>ssh-keygen -t rsa -C &quot;example@163.com&quot;</code>输入后一直回车。按提示的路径找打 id_rsa.pub 文件并复制其内容到 Github 点击右上角的头像 Settings 选择SSH and GPG keys  点击New SSH key 将之前复制的内容粘帖到Key的框中。 上面的title 可以随意 点击add 完成添加。 </p>
 <h4 id="3-1-1验证是否关联"><a href="#3-1-1验证是否关联" class="headerlink" title="3.1.1验证是否关联"></a>3.1.1验证是否关联</h4><p>cmd 输入</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"> ssh -T git@github.com </span><br><span class="line">出现 Hi &lt;account name&gt;! You&#x27;ve successfully authenticated, but GitHub doesnot provide shell access.成功</span><br></pre></td></tr></table></figure>
 
@@ -1322,18 +1327,17 @@ color="122 103 238" opacity='0.7' zIndex="-2" count="200" src="//cdn.bootcss.com
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;本篇
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/posts/19299.html">
+                <a href="/posts/e059.html">
                     <div class="card-image">
                         
                         
-                        <img src="./images/loading.gif" data-original="/medias/featureimages/16.jpg" class="responsive-img" alt="博客搭建.md">
+                        <img src="./images/loading.gif" data-original="/medias/featureimages/6.jpg" class="responsive-img" alt="跳大学习">
                         
-                        <span class="card-title">博客搭建.md</span>
+                        <span class="card-title">跳大学习</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1343,18 +1347,29 @@ color="122 103 238" opacity='0.7' zIndex="-2" count="200" src="//cdn.bootcss.com
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-08-10
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2021-10-17
+                        </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            Longxiang Wang
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/%E5%AE%9E%E7%94%A8%E6%8A%80%E5%B7%A7/" class="post-category">
+                                    -实用技巧
+                                </a>
+                            
                             
                         </span>
                     </div>
                 </div>
-
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/%E9%9D%92%E5%B9%B4%E5%A4%A7%E5%AD%A6%E4%B9%A0/">
+                        <span class="chip bg-color">-青年大学习</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>
@@ -1586,10 +1601,10 @@ color="122 103 238" opacity='0.7' zIndex="-2" count="200" src="//cdn.bootcss.com
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">3.2k</span>
+                        class="white-color">3.3k</span>
             
             
-            <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+            
             
                 
             
@@ -1889,12 +1904,12 @@ $(function () {
     <script src="/libs/instantpage/instantpage.js" type="module"></script>
     
     
-<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/shizuku.model.json"},"display":{"position":"left","width":150,"height":300},"mobile":{"show":true},"log":false});</script><script>
+<script>
             window.imageLazyLoadSetting = {
                 isSPA: false,
                 preloadRatio: 1,
                 processImages: null,
             };
-        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=i;var e=n.imageLazyLoadSetting.isSPA,r=(n.imageLazyLoadSetting.preloadRatio,Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));function i(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight+240||document.documentElement.clientHeight+240)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},t.src!==i&&(n.src=i)}()}i(),n.addEventListener("scroll",function(){var t,e;t=i,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script></body>
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=i;var e=n.imageLazyLoadSetting.isSPA,r=(n.imageLazyLoadSetting.preloadRatio,Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));function i(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight+240||document.documentElement.clientHeight+240)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},t.src!==i&&(n.src=i)}()}i(),n.addEventListener("scroll",function(){var t,e;t=i,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/shizuku.model.json"},"display":{"position":"left","width":150,"height":300},"mobile":{"show":true},"log":false});</script></body>
 
 </html>
